@@ -1,0 +1,21 @@
+
+
+name: reusable workflow
+
+on:
+  workflow_dispatch:
+    inputs:
+      selection:
+        description: "Selecciona una opción"
+        required: true
+        default: DEV
+        options:
+          - DEV
+          - PRE
+          - PRO
+
+jobs:
+  call-workflow-passing-data:
+    uses: Sgomez04/AprendiendoActions3.0/.github/workflows/reusable.yml
+    with:
+      env: ${{ inputs.selection }}
