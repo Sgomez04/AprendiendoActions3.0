@@ -2,15 +2,16 @@ name: execute reusable workflow
 
 on:
   workflow_dispatch:
-    choice:
-      selection:
-        description: "Selecciona una opción"
-        required: true
-        default: DEV
-        options:
-          - DEV
-          - PRE
-          - PRO
+    inputs:
+        selection:
+          description: "Selecciona una opción"
+          required: true
+          type: choice
+          default: DEV
+          options:
+            - DEV
+            - PRE
+            - PRO
 
 jobs:
   call-workflow-passing-data:
