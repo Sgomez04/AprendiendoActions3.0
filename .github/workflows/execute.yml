@@ -16,6 +16,6 @@ on:
 
 jobs:
   call-workflow-passing-data:
-    uses: Sgomez04/AprendiendoActions3.0/.github/workflows/reusable.yml
+    uses: ./Sgomez04/AprendiendoActions3.0/.github/workflows/reusable.yml
     with:
       env: ${{ inputs.selection }}
