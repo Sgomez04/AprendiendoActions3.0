@@ -16,15 +16,15 @@
             "artifact_name": "lambda_handler"
             },
         "PRE": {
-            "lambda_name": "wmidlairlambiprbkerit010",
+            "lambda_name": "wmiidlairlambiprbkerit010",
             "path": "lambdas/SL/lambda_launcher/",
-            "bucket_name": "wmidlairas3biprbkcomm009",
+            "bucket_name": "wmiilairas3biprbkcomm009",
             "artifact_name": "lambda_handler"
             },
         "PRO":{
-            "lambda_name": "wmidlairlambiprbkcrit010",
+            "lambda_name": "wmiplairlambiprbkcrit010",
             "path": "lambdas/SL/lambda_launcher/",
-            "bucket_name": "midlairas3biprbkcomm009",
+            "bucket_name": "miplairas3biprbkcomm009",
             "artifact_name": "lambda_handler"
         }
     }
