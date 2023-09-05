@@ -1,0 +1,32 @@
+name: reusable workflow
+
+on:
+  workflow_call:
+    inputs:
+      selection:
+        description: "Selecciona una opción"
+        required: true
+        default: "DEV"
+        options: |
+          DEV
+          PRE
+          PRO
+
+jobs:
+  json-job:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validar selección
+        run: |
+          seleccion="${{ inputs.seleccion }}"
+          if [ "$seleccion" == "DEV" ]; then
+            echo "Selección válida: DEV"
+          elseif [ "$seleccion" == "PRE" ]; then
+            echo "Selección válida: PRE"
+          elseif [ "$seleccion" == "PRO" ]; then
+            echo "Selección válida: PRO"
+          elsese
+            echo "Selección no válida. Error."
+            exit 1
+          fi
