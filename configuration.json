@@ -1,0 +1,31 @@
+{
+    "sonar_pk": "wel:wel: wmi-pbbi:s1-lambda-one",
+    "sonar_url": "http://sonarqubel.sgtech.gs.corp",
+    "fortify_pj": "santander-group-wealth-ng_wmi-secure-lending-python-lambda-launcher",
+    "python_release_repository": "pypi-releases",
+    "python_snapshot_repository": "pypi-internal",
+    "python_virtual_environment_directory": "/opt/runner/instance-1/_work/wmi-secure-lending-python-lambda-launcher/",
+    "pip_components_install_command": "",
+    "python_requirements_path": "",
+    "nexus_deployment_url": "https://nexusmaster.alm.europe.cloudcenter.corp",
+    "ENV": {
+        "DEV": {
+            "lambda_name": "wmidlairlambiprbkcrit010",
+            "path": "lambdas/SL/lambda_launcher/",
+            "bucket_name": "wmidlairas3biprbkcomm009",
+            "artifact_name": "lambda_handler"
+            },
+        "PRE": {
+            "lambda_name": "wmidlairlambiprbkerit010",
+            "path": "lambdas/SL/lambda_launcher/",
+            "bucket_name": "wmidlairas3biprbkcomm009",
+            "artifact_name": "lambda_handler"
+            },
+        "PRO":{
+            "lambda_name": "wmidlairlambiprbkcrit010",
+            "path": "lambdas/SL/lambda_launcher/",
+            "bucket_name": "midlairas3biprbkcomm009",
+            "artifact_name": "lambda_handler"
+        }
+    }
+}
